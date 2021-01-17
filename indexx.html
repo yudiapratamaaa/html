@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        
+        section {
+            display: flex
+        }
+        
+        nav {
+            flex: 1;
+            background: #aaa;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            flex: 3;
+            background-color: #a1a1a1;
+            padding: 10px;
+        }
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td,
+        th {
+            border: 1px solid #aaaaaa;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #bbbbbb;
+        }
+        
+        @media (max-width: 480px) {
+            tr:nth-child(even) {
+                background-color: red;
+            }
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Layout Flexbox</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus quis dolorem fugit fugiat laborum repellendus ad est doloribus modi consequatur ipsam id, accusantium corporis, facilis illum dignissimos labore quo?</p>
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Jakarta</a></li>
+                <li><a href="#">Bandung</a></li>
+                <li><a href="#">Jogja</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Jakarta</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, quisquam? Voluptas quos natus itaque cum ad esse veniam quod neque. Incidunt, soluta rem. Rem eveniet nihil, praesentium minus veniam facere.</p>
+            <table>
+                <tr>
+                    <th>Perusahaan</th>
+                    <th>Kontak</th>
+                    <th>Kota</th>
+                </tr>
+                <tr>
+                    <td>BCA</td>
+                    <td>021999999</td>
+                    <td>Depok</td>
+                </tr>
+                <tr>
+                    <td>Mandiri</td>
+                    <td>021888888</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>BNI</td>
+                    <td>021777777</td>
+                    <td>Jogja</td>
+                </tr>
+            </table>
+            <form>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama">
+                <label for="umur">Umur</label>
+                <input type="number" id="umur" name="umur" placeholder="Umur">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="submit" name="Pencet">
+            </form>
+            <video width="320" height="240" controls>
+                <source src="yudi.mp4" type="video/mp4"/>
+            </video>
+            <br>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126881.52702128382!2d106.74775608229953!3d-6.387843816478225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95620a297d3%3A0x1cfd4042316fb217!2sKota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1610894339694!5m2!1sid!2sid"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
